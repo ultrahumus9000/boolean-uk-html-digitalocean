@@ -28,7 +28,6 @@ header nav{
     grid-template-columns: auto 50%;
     font-size: 18px;
     place-content: right;
-    padding-left: 140px;
 }
 header nav select{
     border: none;
@@ -59,18 +58,35 @@ header li{
 /* header section finsihed */
 /* main section start */
 .one-form{
-    border: 2px solid pink;
     position: relative;
+    height: 100vh;
 }
-.videoplay{
+.one-form form{
+    position: absolute;
+    background-color: white ;
+    height: 400px;
+    width: 400px;
+    top: 100px;
+    z-index:1;
+    right: 400px;
+    border-radius: 20px;
+}
+
+.one-form input{
+    display: block;
+}
+.emailsignup{
+    display: block;
+}
+.videooverlay{
+    position: absolute;
     background-color: #006aff;
-    opacity: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.5;
+    height: 99vh;
 }
 video{
- position: relative;
- border: none;
- width: 100vw;
- object-fit: contain;
- opacity: 50%;
- 
+    width: 100vw;
 }
