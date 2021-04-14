@@ -13,6 +13,7 @@ body{
     display: grid;
     grid-template-rows: auto auto;
 }
+
 header{
     
     display: grid; 
@@ -245,7 +246,7 @@ object-fit: fill;
 }
 /* section-two finished */
 /* common section */
-.wrappers:not(.two-customer .wrappers){
+.wrappers:not(.two-customer .wrappers, .eight-start .wrappers){
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
@@ -411,4 +412,86 @@ justify-content: left;
 /* section loctions finished */
 .seven-team{
     background-color: #f3f5f9;
+}
+/* section team finished */
+.eight-start{
+    background: url(https://web.archive.org/web/20190619215202im_/https:/www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+}
+.eight-start .wrappers{
+    padding: 50px;
+
+}
+.eight-start .wrappers h2{
+    color: white;
+}
+.eight-start .wrappers button{
+    color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50px;
+    border:none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.eight-start .wrappers button:hover{
+    background-color: #ffffff95;
+}
+/* section eight finished */
+footer{
+    background-color: #010e28;
+}
+footer .wrappers{
+    display: flex;
+    gap: 50px;
+}
+.icons{
+    display: grid;
+    justify-content: left;
+    height: 200px;
+    padding: 20px;
+    gap: 20px;
+}
+.icons svg{
+    fill: thistle;
+    padding-left: 0px;
+}
+.svgs{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    width: 70%;
+}
+.icons svg:hover {
+    fill: turquoise;
+}
+footer .wrappers h4{
+    color:grey;
+    font-weight: lighter;
+}
+
+footer .wrappers ul{
+color:whitesmoke;
+text-align: left;
+}
+footer .wrappers ul li{
+    color:grey;
+    opacity: 60%;
+    list-style: none;
+    font-size: 0.9rem;
+    margin:25px;
+    transition: 0.2s;
+    transform: translateX(-23px);
+}
+footer .wrappers ul li:hover{
+    color: whitesmoke;
+}
+.shark{
+    position: sticky;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    left: 40px;
+    object-fit: cover;
+    border:5px solid cyan;
+    z-index: 3;
 }
