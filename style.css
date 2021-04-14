@@ -17,6 +17,10 @@ header{
     
     display: grid; 
     grid-template-columns: auto auto;
+    position: fixed;
+    background-color: white;
+    z-index:3;
+    width: 100%;
 }
 
 .backtotop{
@@ -180,11 +184,10 @@ header li{
 .videooverlay{
     position: absolute;
     background-color:#062550;
-    top: 4px;
     left: 0px;
     width: 100%;
     opacity: 0.5;
-    height: 99%;
+    height: 100%;
     margin: 0px;
     z-index: 1;  
 }
@@ -195,6 +198,7 @@ video{
     top: 0px;
     margin: 0px;
     z-index:-1;
+    object-fit: cover;
 }
 /* section-one finished */
 .two-customer{
@@ -273,6 +277,7 @@ object-fit: fill;
 .wrappers-content{
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -320,6 +325,23 @@ justify-content: left;
 .four-develeper{
     background-color: #f3f5f9;
 }
+.four-develeper ol{
+    list-style: none;
+}
+.four-develeper ol li{
+    display: inline-block;
+    margin-right: 7px;
+    
+}
+.four-develeper .firstdot{
+    background-color:blue; 
+    border-radius: 50%;
+}
+.four-develeper li img:hover{
+ background-color:rgb(193, 193, 248);
+ border-radius: 50%;
+ 
+}
 .four-develeper .wrappers p{
     font-size: 1.4rem;
     line-height: 35px;
@@ -327,7 +349,66 @@ justify-content: left;
 }
 .wrapperscreenshot{
     margin: 40px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
 }
-.four-develeper .wrappers img{
-  width: 780px;
+.four-develeper .wrappers .mainimg{
+  width: 750px;
+}
+/* section four completed */
+.five-need h2, .six-regions h2, .seven-team h2, .eight-start h2{
+    margin-bottom: 45px;
+}
+.businesscontent{
+   display: flex;
+   width: 900px;
+   text-align: left;
+   gap: 10px;
+}
+.businesscontent div img, .businesscontent div h3, .businesscontent div p, .businesscontent div a{
+    margin-bottom: 20px;
+}
+.businesscontent a{
+    text-decoration: none;
+    color: blue;
+}
+/* section five finished */
+.six-regions{
+    background: #031b4e;
+}
+.six-regions h2{
+    color: white;
+}
+.wrapperlocations{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.wrapperlocations div{
+    border-bottom: 1px solid #d3d3d350;
+    padding:10px;
+    margin-right: 35px;
+    position: relative;
+}
+.wrapperlocations span{
+    color: white;
+    position: absolute;
+    left: 20px;
+}
+.wrapperlocations Small{
+    color: lightgray;
+    font-weight: lighter;
+    opacity: 50%;
+}
+.wrapperlocations a{
+    color: cyan;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+}
+/* section loctions finished */
+.seven-team{
+    background-color: #f3f5f9;
 }
