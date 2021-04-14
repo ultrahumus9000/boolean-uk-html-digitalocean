@@ -487,8 +487,8 @@ footer .wrappers ul li:hover{
 .shark{
     position: sticky;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     bottom: 100px;
     left: 40px;
     object-fit: cover;
